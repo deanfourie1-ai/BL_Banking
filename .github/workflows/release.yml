@@ -5,12 +5,18 @@ on:
   push:
     tags:
       - 'v*.*.*'
+      - 'v*.*.*.*'
 
 permissions:
   contents: write
   actions: read
 
 jobs:
+  build:
+    uses: microsoft/AL-Go-Actions/.github/workflows/CICD.yaml@main
+    secrets: inherit
+
   create_release:
+    needs: build
     uses: microsoft/AL-Go-Actions/.github/workflows/CreateRelease.yaml@main
     secrets: inherit
