@@ -2,9 +2,11 @@
 .alpackages/
 .output/
 .rad/
+*.app
 
 # VS Code
 .vscode/*.log
+.vscode/.alcache/
 .history/
 
 # Local snapshots and caches
