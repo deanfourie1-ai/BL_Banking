@@ -1,4 +1,4 @@
-name: AL-Go Release
+name: AL-Go Tag Build
 
 on:
   workflow_dispatch:
@@ -8,15 +8,10 @@ on:
       - 'v*.*.*.*'
 
 permissions:
-  contents: write
+  contents: read
   actions: read
 
 jobs:
-  build:
+  tag_build:
     uses: microsoft/AL-Go-Actions/.github/workflows/CICD.yaml@main
-    secrets: inherit
-
-  create_release:
-    needs: build
-    uses: microsoft/AL-Go-Actions/.github/workflows/CreateRelease.yaml@main
     secrets: inherit
