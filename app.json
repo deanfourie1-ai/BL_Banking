@@ -1,0 +1,24 @@
+{
+  "id": "7f3a9d4c-8b6e-4c2f-9e41-2d6c8f1b5a92",
+  "name": "NL Bank Processing codeunit",
+  "publisher": "GriffinOps",
+  "version": "1.0.0.1",
+  "brief": "NL Bank Processing codeunit",
+  "description": "NL Bank Processing codeunit.",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "platform": "1.0.0.0",
+  "application": "27.0.0.0",
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "16.0",
+  "features": ["NoImplicitWith"],
+  "idRanges": [
+    {"from": 56100, "to": 56149}
+  ]
+}

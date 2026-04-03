@@ -1,0 +1,16 @@
+# AL build and symbol artifacts
+.alpackages/
+.output/
+.rad/
+
+# VS Code
+.vscode/*.log
+.history/
+
+# Local snapshots and caches
+.snapshots/
+*.cache
+
+# OS/user files
+Thumbs.db
+.DS_Store

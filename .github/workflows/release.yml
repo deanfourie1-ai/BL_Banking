@@ -1,0 +1,16 @@
+name: AL-Go Release
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - 'v*.*.*'
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  create_release:
+    uses: microsoft/AL-Go-Actions/.github/workflows/CreateRelease.yaml@main
+    secrets: inherit

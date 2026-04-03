@@ -1,0 +1,19 @@
+name: AL-Go CI
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  ci_cd:
+    uses: microsoft/AL-Go-Actions/.github/workflows/CICD.yaml@main
+    secrets: inherit

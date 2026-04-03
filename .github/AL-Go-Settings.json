@@ -1,0 +1,9 @@
+{
+  "country": "w1",
+  "appFolders": [
+    "."
+  ],
+  "repoVersion": "1.0",
+  "name": "NL Bank Processing codeunit",
+  "publisher": "GriffinOps"
+}
