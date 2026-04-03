@@ -15,5 +15,5 @@ permissions:
 
 jobs:
   ci_cd:
-    uses: microsoft/AL-Go-Actions/.github/workflows/CICD.yaml@main
+    uses: microsoft/AL-Go-PTE/.github/workflows/CICD.yaml@main
     secrets: inherit
